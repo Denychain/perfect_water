@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Сервіс і монтаж — Perfect Water</title>
+
+  <meta
+    name="description"
+    content="Сервіс і монтаж систем очищення води Perfect Water: встановлення, планове обслуговування, заміна картриджів і підтримка."
+  >
+
+  <link rel="icon" type="image/webp" href="/assets/img/favicon.webp" sizes="32x32">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body class="page page--service">
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__icon header__logo" aria-label="На головну">
+                <img src="assets/icons/logo.svg" alt="Логотип">
+            </a>
+
+            <nav class="header__menu" aria-label="Головна навігація">
+                <a href="catalog.html">Каталог</a>
+                <a href="service.html">Сервіс і монтаж</a>
+                <a href="#footer-contacts" class="js-scroll-link">Контакти</a>
+                <a href="faq.html">Питання та відповіді</a>
+            </nav>
+
+            <div class="header__search-bar" aria-hidden="true">
+                <form action="catalog.html" method="GET" class="header__search-form">
+                    <button type="submit" class="header__search-submit">
+                        <img src="assets/icons/search.svg" alt="Пошук">
+                    </button>
+                    <input type="text" name="q" class="header__search-input" placeholder="Що шукаєте?.." autocomplete="off">
+                    <button type="button" class="header__search-close" aria-label="Закрити пошук">✕</button>
+                </form>
+            </div>
+
+            <div class="header__actions">
+                <button class="header__icon header__search" type="button" aria-label="Відкрити пошук">
+                    <img src="assets/icons/search.svg" alt="Пошук">
+                </button>
+
+                <button class="header__burger" type="button" aria-label="Відкрити меню">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+  <main>
+<section class="section section--main-bg service-hero">
+            <div class="container">
+                <div class="service-hero__grid">
+                    
+                    <div class="service-hero__content">
+                        <h1 class="pw-h1">Сервіс і монтаж <br>без "сюрпризів"</h1>
+                        <p class="pw-body-lg service-hero__desc">
+                            Надішліть фото місця установки — майстер приїде з потрібними деталями. Жодних поїздок в магазин посеред роботи.
+                        </p>
+
+                        <div class="hero__buttons">
+                            <button class="pw-btn pw-btn--primary" onclick="openBookingForm()">Записатися</button>
+                            <button class="pw-btn pw-btn--secondary" onclick="openUploadForm()">Надіслати фото</button>
+                        </div>
+
+                        <div class="service-hero__badges">
+                            <span class="pw-badge">🛡 Гарантія на роботи 12 міс</span>
+                            <span class="pw-badge">📍 Івано-Франківськ та область</span>
+                        </div>
+                    </div>
+
+                    <div class="service-hero__visual">
+                        <div class="service-hero__master-wrapper">
+                            <img src="assets/img/master-cutout.webp" alt="Майстер PerfectWater" class="service-hero__master-img">
+                            <div class="service-hero__decor-bg"></div>
+                            
+                            <div class="pw-card-glass service-hero__exp-card">
+                                <div class="service-hero__exp-icon">5+</div>
+                                <div class="service-hero__exp-text">
+                                    <strong>Років досвіду</strong>
+                                    <span>у наших майстрів</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div id="smart-tabs" class="smart-tabs">
+            <div class="segmented-control">
+                <button class="seg-btn seg-btn--active" id="tab-btn-service" onclick="switchTab('service')">
+                    Сервіс
+                </button>
+                <button class="seg-btn" id="tab-btn-install" onclick="switchTab('install')">
+                    Монтаж
+                </button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="how-it-works__steps">
+                    <div class="how-it-works__step pw-card-glass">
+                        <div class="how-it-works__step-tag">1</div>
+                        <div class="how-it-works__step-title">Вибір послуги</div>
+                        <div class="how-it-works__step-text">Сервіс або Монтаж</div>
+                    </div>
+                    <div class="how-it-works__step pw-card-glass">
+                        <div class="how-it-works__step-tag">2</div>
+                        <div class="how-it-works__step-title">Дані + Фото</div>
+                        <div class="how-it-works__step-text">Завантажуєте у форму</div>
+                    </div>
+                    <div class="how-it-works__step pw-card-glass">
+                        <div class="how-it-works__step-tag">3</div>
+                        <div class="how-it-works__step-title">Узгодження</div>
+                        <div class="how-it-works__step-text">Вартість і час</div>
+                    </div>
+                    <div class="how-it-works__step pw-card-glass">
+                        <div class="how-it-works__step-tag">4</div>
+                        <div class="how-it-works__step-title">Виїзд майстра</div>
+                        <div class="how-it-works__step-text">Робота + Акт</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="panel-service" class="tab-panel">
+            
+            <section class="section">
+                <div class="container">
+                    <h2 class="pw-h2 service-title">Оберіть проблему</h2>
+                    
+                    <div class="catalog-products__grid service-grid">
+                        
+                        <div class="product-card service-card">
+                            <img src="assets/img/service-filters.svg" class="service-card__thumb" alt="Фільтри">
+                            <div class="service-card__content">
+                                <h3 class="product-card__title">Планова заміна</h3>
+                                <p class="product-card__desc">Час міняти картриджі (минуло 6 міс)</p>
+                            </div>
+                            <button class="pw-btn pw-btn--secondary pw-btn--sm service-card__action">➝</button>
+                        </div>
+
+                        <div class="product-card service-card">
+                            <img src="assets/img/service-leak.svg" class="service-card__thumb" alt="Протікання">
+                            <div class="service-card__content">
+                                <h3 class="product-card__title">Протікання / SOS</h3>
+                                <p class="product-card__desc">Вода під мийкою, терміновий виїзд</p>
+                            </div>
+                            <button class="pw-btn pw-btn--secondary pw-btn--sm service-card__action">➝</button>
+                        </div>
+
+                        <div class="product-card service-card">
+                            <img src="assets/img/service-bad-taste.svg" class="service-card__thumb" alt="Смак води">
+                            <div class="service-card__content">
+                                <h3 class="product-card__title">Погіршився смак</h3>
+                                <p class="product-card__desc">Накип у чайнику, плівка на воді</p>
+                            </div>
+                            <button class="pw-btn pw-btn--secondary pw-btn--sm service-card__action">➝</button>
+                        </div>
+
+                         <div class="product-card service-card">
+                            <img src="assets/img/service-unknown.svg" class="service-card__thumb" alt="Не знаю модель">
+                            <div class="service-card__content">
+                                <h3 class="product-card__title">Не знаю модель</h3>
+                                <p class="product-card__desc">Надішліть фото — ми підберемо деталі</p>
+                            </div>
+                            <button class="pw-btn pw-btn--secondary pw-btn--sm service-card__action">📷</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--white-bg">
+                <div class="container">
+                    <div class="diagnostics-card">
+                        <h2 class="pw-h2 diagnostics-card__title">Швидка самодіагностика</h2>
+                        <p class="pw-body-lg" style="margin-bottom: 24px; text-align: center;">
+                            Дайте відповідь на 2 питання, щоб отримати рекомендацію
+                        </p>
+                        
+                        <form class="diagnostics-card__form">
+                            <div class="diagnostics-card__group">
+                                <p class="pw-body-lg diagnostics-card__label">1. Що вас турбує?</p>
+                                <div class="diagnostics-options">
+                                    <label class="diagnostics-pill">
+                                        <input type="radio" name="issue" class="sr-only"> 🤢 Запах / Смак
+                                    </label>
+                                    <label class="diagnostics-pill">
+                                        <input type="radio" name="issue" class="sr-only"> 🧱 Накип
+                                    </label>
+                                    <label class="diagnostics-pill">
+                                        <input type="radio" name="issue" class="sr-only"> 📉 Слабкий тиск
+                                    </label>
+                                    <label class="diagnostics-pill">
+                                        <input type="radio" name="issue" class="sr-only"> 💧 Протікання
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="diagnostics-card__group">
+                                <p class="pw-body-lg diagnostics-card__label">2. Коли міняли картриджі?</p>
+                                <div class="diagnostics-options">
+                                    <label class="diagnostics-pill">
+                                        <input type="radio" name="date" class="sr-only"> Менше 3 міс.
+                                    </label>
+                                    <label class="diagnostics-pill">
+                                        <input type="radio" name="date" class="sr-only"> 3-6 місяців
+                                    </label>
+                                    <label class="diagnostics-pill">
+                                        <input type="radio" name="date" class="sr-only"> Більше року
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="diagnostics-card__actions">
+                                <button type="button" class="pw-btn pw-btn--primary diagnostics-btn">
+                                    Отримати рекомендацію
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--white-bg">
+                <div class="container">
+                    <h2 class="pw-h2 service-title">Як ми працюємо</h2>
+                    
+                    <div class="before-after__grid">
+                        <div class="before-after__case">
+                            <div class="before-after__img-wrapper">
+                                <span class="before-after__label before-after__label--before">До: Хаос і трубки</span>
+                                <img src="assets/img/case-before-1.webp" alt="До ремонту" class="before-after__img">
+                            </div>
+                            <div class="before-after__img-wrapper">
+                                <span class="before-after__label before-after__label--after">Після: PerfectWater</span>
+                                <img src="assets/img/case-after-1.webp" alt="Після ремонту" class="before-after__img">
+                            </div>
+                            <p class="pw-body-sm before-after__desc">Заміна старої системи на Ecosoft P'URE. Акуратна розводка трубок.</p>
+                        </div>
+
+                         <div class="before-after__cta">
+                            <div class="pw-card-glass before-after__card-content">
+                                <h3 class="pw-h3">Є питання?</h3>
+                                <p class="before-after__text">Надішліть фото своєї мийки, і ми скажемо точну вартість робіт.</p>
+                                <button class="pw-btn pw-btn--primary">Надіслати фото в Viber</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+             <section class="section section--white-bg">
+                <div class="container">
+                    <h2 class="pw-h2 service-title">Ціни без прихованих платежів</h2>
+                    
+                    <div class="pw-card-glass service-price__card">
+                        <div class="product-service__table">
+                            <div class="product-service__row">
+                                <span class="product-service__label">Виїзд майстра по Івано-Франківську</span>
+                                <span class="product-service__value">від 400 ₴</span>
+                            </div>
+                            <div class="product-service__row">
+                                <span class="product-service__label">Планова заміна картриджів (робота)</span>
+                                <span class="product-service__value">від 600 ₴</span>
+                            </div>
+                            <div class="product-service__row">
+                                <span class="product-service__label">Діагностика системи</span>
+                                <span class="product-service__value">від 500 ₴</span>
+                            </div>
+                        </div>
+                        <div class="service-price__note-box">
+                            <p class="pw-body-sm service-price__note">
+                                * Точну вартість майстер озвучить після перегляду фото або моделі обладнання.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="panel-install" class="tab-panel hidden">
+            
+            <section class="section">
+                <div class="container">
+                    <h2 class="pw-h2 service-title">Що будемо встановлювати?</h2>
+                    
+                    <div class="catalog-products__grid">
+                        <a href="#" class="install-card-visual">
+                            <img src="assets/img/install-sink.webp" alt="Кухня" class="install-card-visual__img">
+                            <div class="install-card-visual__content">
+                                <h3 class="pw-h3 install-card-visual__title">Під мийку</h3>
+                                <p class="install-card-visual__desc">Квартири та невеликі офіси. Осмос або проточні фільтри.</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="install-card-visual">
+                            <img src="assets/img/install-house.webp" alt="Котельня" class="install-card-visual__img">
+                            <div class="install-card-visual__content">
+                                <h3 class="pw-h3 install-card-visual__title">Котедж / Будинок</h3>
+                                <p class="install-card-visual__desc">Комплексні системи очистки, пом'якшувачі, колони.</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="install-card-visual">
+                            <img src="assets/img/install-cafe.webp" alt="Бізнес" class="install-card-visual__img">
+                            <div class="install-card-visual__content">
+                                <h3 class="pw-h3 install-card-visual__title">Для бізнесу</h3>
+                                <p class="install-card-visual__desc">HoReCa, виробництво, офіси.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--white-bg">
+                <div class="container">
+                    <div class="install-form__grid">
+                        
+                        <div class="install-form__info">
+                            <h2 class="pw-h2">Щоб монтаж пройшов ідеально</h2>
+                            <p class="pw-body-lg install-form__lead">
+                                Заповніть коротку анкету. Це зекономить ваш час і гроші (майстер приїде один раз і все зробить).
+                            </p>
+                            <ul class="replace__list">
+                                <li class="replace__item"><b>Крок 1:</b> Оберіть локацію</li>
+                                <li class="replace__item"><b>Крок 2:</b> Сфотографуйте місце установки</li>
+                                <li class="replace__item"><b>Крок 3:</b> Сфотографуйте труби (ввід води)</li>
+                            </ul>
+                        </div>
+
+                        <div class="pw-card-glass install-form__card">
+                            <h3 class="pw-h3 install-form__title">Заявка на монтаж</h3>
+                            
+                            <form class="drop__form">
+                                <input type="text" class="drop__input" placeholder="Ваше ім'я">
+                                <input type="tel" class="drop__input" placeholder="Телефон">
+                                
+                                <div class="select-wrapper" style="width:100%">
+                                    <select class="drop__input">
+                                        <option>Тип об'єкту (Квартира/Дім)</option>
+                                        <option>Квартира</option>
+                                        <option>Будинок</option>
+                                        <option>Офіс</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="install-form__upload-group">
+                                    <button type="button" class="pw-btn pw-btn--secondary pw-btn--sm install-form__upload-btn">
+                                        📷 Фото місця
+                                    </button>
+                                    <button type="button" class="pw-btn pw-btn--secondary pw-btn--sm install-form__upload-btn">
+                                        📷 Фото труб
+                                    </button>
+                                </div>
+
+                                <button type="submit" class="pw-btn pw-btn--primary install-form__submit">
+                                    Розрахувати вартість
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="how-it-works__header masters__header">
+                        <h2 class="pw-h2">Не "шабашники", а професіонали</h2>
+                        <p class="how-it-works__lead">
+                            Наші майстри проходять сертифікацію Ecosoft та BWT. Мають з собою змінне взуття, пилосос та професійний інструмент.
+                        </p>
+                    </div>
+
+                    <div class="masters__grid">
+                        <div class="product-card masters__card">
+                            <img src="assets/img/master-1.webp" class="masters__img" alt="Олександр">
+                            <div class="masters__info">
+                                <h3 class="pw-h3 masters__name">Олександр</h3>
+                                <p class="masters__role">Старший інженер,<br>досвід 7 років</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card masters__card">
+                            <img src="assets/img/master-2.webp" class="masters__img" alt="Дмитро">
+                            <div class="masters__info">
+                                <h3 class="pw-h3 masters__name">Дмитро</h3>
+                                <p class="masters__role">Спеціаліст з промислових<br>систем очистки</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card masters__card">
+                            <img src="assets/img/master-3.webp" class="masters__img" alt="Сергій">
+                            <div class="masters__info">
+                                <h3 class="pw-h3 masters__name">Сергій</h3>
+                                <p class="masters__role">Майстер сервісного<br>обслуговування</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+  </main>
+
+  <footer class="pw-footer" aria-label="Footer Perfect Water">
+    <div class="pw-footer__container">
+      <div class="pw-footer__top">
+        <div class="pw-footer__brand">
+          <a class="pw-footer__brand-link" href="/" aria-label="Perfect Water — на головну">
+            <img
+              class="pw-footer__brand-mark"
+              src="assets/logo.svg"
+              width="45"
+              height="43"
+              alt=""
+              aria-hidden="true"
+            >
+            <span class="pw-footer__brand-name">Perfect<br>Water</span>
+          </a>
+
+          <p class="pw-footer__brand-tagline">
+            Технології чистої води для дому та бізнесу
+          </p>
+        </div>
+
+        <nav class="pw-footer__cols" aria-label="Навігація футера">
+          <details class="pw-footer__col pw-footer__details" data-footer-details>
+            <summary class="pw-footer__title">Рішення</summary>
+            <ul class="pw-footer__list">
+              <li><a class="pw-footer__link" href="#">Питна вода</a></li>
+              <li><a class="pw-footer__link" href="#">Побутова вода</a></li>
+              <li><a class="pw-footer__link" href="#">Картриджі</a></li>
+              <li><a class="pw-footer__link" href="#">Комплектуючі</a></li>
+            </ul>
+          </details>
+
+          <details class="pw-footer__col pw-footer__details" data-footer-details>
+            <summary class="pw-footer__title">Послуги</summary>
+            <ul class="pw-footer__list">
+              <li><a class="pw-footer__link" href="#">Сервіс і заміна</a></li>
+              <li><a class="pw-footer__link" href="#">Монтаж</a></li>
+              <li><a class="pw-footer__link" href="#">Підбір системи</a></li>
+            </ul>
+          </details>
+
+          <details class="pw-footer__col pw-footer__details" data-footer-details>
+            <summary class="pw-footer__title">Компанія</summary>
+            <ul class="pw-footer__list">
+              <li><a class="pw-footer__link" href="#">Про нас</a></li>
+              <li><a class="pw-footer__link" href="#">Питання та відповіді</a></li>
+              <li><a class="pw-footer__link" href="#">Контакти</a></li>
+            </ul>
+          </details>
+
+          <div class="pw-footer__col pw-footer__contacts" id="footer-contacts">
+            <div class="pw-footer__title pw-footer__title--static">Контакти</div>
+
+            <div class="pw-footer__contacts-body">
+              <div class="pw-footer__phones">
+                <a class="pw-footer__phone" href="tel:+380966901214">+38 (096) 690-12-14</a>
+                <a class="pw-footer__phone" href="tel:+380958526226">+38 (095) 852-62-26</a>
+              </div>
+
+              <div class="pw-footer__addr">
+                <span class="pw-footer__addr-city">м. Івано-Франківськ,</span><br>
+                <span class="pw-footer__addr-street">вул. Івана Миколайчука 10</span>
+              </div>
+
+              <div class="pw-footer__hours">Пн-Пт 9:00-17:00</div>
+            </div>
+
+            <div class="pw-footer__reply">Відповідаємо протягом 5 хв</div>
+
+            <div class="pw-footer__social" role="navigation" aria-label="Соцмережі">
+              <a class="pw-footer__social-link" href="#" aria-label="Viber">
+                <img src="assets/viber.svg" width="24" height="24" alt="" aria-hidden="true">
+              </a>
+              <a class="pw-footer__social-link" href="#" aria-label="Instagram">
+                <img src="assets/instagram.svg" width="24" height="24" alt="" aria-hidden="true">
+              </a>
+              <a class="pw-footer__social-link" href="#" aria-label="Telegram">
+                <img src="assets/telegram.svg" width="24" height="24" alt="" aria-hidden="true">
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="pw-footer__divider" role="separator" aria-hidden="true"></div>
+
+      <div class="pw-footer__bottom">
+        <div class="pw-footer__copy">© 2025 Perfect Water</div>
+
+        <div class="pw-footer__legal">
+          <a class="pw-footer__legal-link" href="#">Політика конфіденційності</a>
+          <a class="pw-footer__legal-link" href="#">Cookies</a>
+          <a class="pw-footer__legal-link" href="#">Умови користування</a>
+        </div>
+
+        <div class="pw-footer__credit">Design by Volodka</div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const mql = window.matchMedia("(min-width: 835px)");
+        const details = Array.from(document.querySelectorAll("[data-footer-details]"));
+
+        function sync() {
+          const open = mql.matches;
+          details.forEach((d) => (d.open = open));
+        }
+
+        sync();
+        if (mql.addEventListener) mql.addEventListener("change", sync);
+        else mql.addListener(sync);
+      })();
+    </script>
+  </footer>
+
+</body>
+</html>

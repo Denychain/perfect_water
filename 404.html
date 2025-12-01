@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>404 - Сторінку не знайдено | Perfect Water</title>
+    <meta name="description" content="Сторінку не знайдено. Поверніться на головну Perfect Water.">
+
+    <link rel="icon" type="image/webp" href="/assets/img/favicon.webp" sizes="32x32">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="main.js" defer></script>
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__icon header__logo" aria-label="На головну">
+                <img src="assets/icons/logo.svg" alt="Логотип">
+            </a>
+
+            <nav class="header__menu" aria-label="Головна навігація">
+                <a href="catalog.html">Каталог</a>
+                <a href="service.html">Сервіс і монтаж</a>
+                <a href="index.html#footer-contacts">Контакти</a>
+                <a href="faq.html">Питання та відповіді</a>
+            </nav>
+
+            <div class="header__search-bar" aria-hidden="true">
+                <form action="catalog.html" method="GET" class="header__search-form">
+                    <button type="submit" class="header__search-submit">
+                        <img src="assets/icons/search.svg" alt="Пошук">
+                    </button>
+                    <input type="text" name="q" class="header__search-input" placeholder="Що шукаєте?.." autocomplete="off">
+                    <button type="button" class="header__search-close" aria-label="Закрити пошук">✕</button>
+                </form>
+            </div>
+
+            <div class="header__actions">
+                <button class="header__icon header__search" type="button" aria-label="Відкрити пошук">
+                    <img src="assets/icons/search.svg" alt="Пошук">
+                </button>
+
+                <button class="header__burger" type="button" aria-label="Відкрити меню">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="error-page">
+        <div class="container" style="display: flex; justify-content: center;">
+            
+            <div class="pw-card-glass error-card">
+                <div class="error-huge-text">404</div>
+                
+                <h2 class="pw-h2 error-title">
+                    Упс! Ця крапля впала не туди
+                </h2>
+                
+                <p class="error-desc">
+                    Сторінка, яку ви шукаєте, розчинилася або ніколи не існувала. Спробуйте повернутися до джерела.
+                </p>
+
+                <a href="index.html" class="pw-btn pw-btn--primary pw-btn--lg">
+                    Повернутися на головну
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="pw-footer" aria-label="Footer Perfect Water" style="margin-top: auto;">
+        <div class="pw-footer__container">
+            <div class="pw-footer__top">
+                <div class="pw-footer__brand">
+                    <a class="pw-footer__brand-link" href="index.html" aria-label="Perfect Water — на головну">
+                        <img class="pw-footer__brand-mark" src="assets/logo.svg" width="45" height="43" alt="" aria-hidden="true">
+                        <span class="pw-footer__brand-name">Perfect<br>Water</span>
+                    </a>
+                    <p class="pw-footer__brand-tagline">
+                        Технології чистої води для дому та бізнесу
+                    </p>
+                </div>
+
+                <nav class="pw-footer__cols" aria-label="Навігація футера">
+                    <details class="pw-footer__col pw-footer__details" data-footer-details>
+                        <summary class="pw-footer__title">Рішення</summary>
+                        <ul class="pw-footer__list">
+                            <li><a class="pw-footer__link" href="#">Питна вода</a></li>
+                            <li><a class="pw-footer__link" href="#">Побутова вода</a></li>
+                            <li><a class="pw-footer__link" href="#">Картриджі</a></li>
+                            <li><a class="pw-footer__link" href="#">Комплектуючі</a></li>
+                        </ul>
+                    </details>
+
+                    <details class="pw-footer__col pw-footer__details" data-footer-details>
+                        <summary class="pw-footer__title">Послуги</summary>
+                        <ul class="pw-footer__list">
+                            <li><a class="pw-footer__link" href="#">Сервіс і заміна</a></li>
+                            <li><a class="pw-footer__link" href="#">Монтаж</a></li>
+                            <li><a class="pw-footer__link" href="#">Підбір системи</a></li>
+                        </ul>
+                    </details>
+
+                    <details class="pw-footer__col pw-footer__details" data-footer-details>
+                        <summary class="pw-footer__title">Компанія</summary>
+                        <ul class="pw-footer__list">
+                            <li><a class="pw-footer__link" href="#">Про нас</a></li>
+                            <li><a class="pw-footer__link" href="#">Питання та відповіді</a></li>
+                            <li><a class="pw-footer__link" href="#">Контакти</a></li>
+                        </ul>
+                    </details>
+
+                    <div class="pw-footer__col pw-footer__contacts" id="footer-contacts">
+                        <div class="pw-footer__title pw-footer__title--static">Контакти</div>
+                        <div class="pw-footer__contacts-body">
+                            <div class="pw-footer__phones">
+                                <a class="pw-footer__phone" href="tel:+380966901214">+38 (096) 690-12-14</a>
+                                <a class="pw-footer__phone" href="tel:+380958526226">+38 (095) 852-62-26</a>
+                            </div>
+                            <div class="pw-footer__addr">
+                                <span class="pw-footer__addr-city">м. Івано-Франківськ,</span><br>
+                                <span class="pw-footer__addr-street">вул. Івана Миколайчука 10</span>
+                            </div>
+                            <div class="pw-footer__hours">Пн-Пт 9:00-17:00</div>
+                        </div>
+                        <div class="pw-footer__reply">Відповідаємо протягом 5 хв</div>
+                        <div class="pw-footer__social">
+                            <a class="pw-footer__social-link" href="#" aria-label="Viber">
+                                <img src="assets/viber.svg" width="24" height="24" alt="" aria-hidden="true">
+                            </a>
+                            <a class="pw-footer__social-link" href="#" aria-label="Instagram">
+                                <img src="assets/instagram.svg" width="24" height="24" alt="" aria-hidden="true">
+                            </a>
+                            <a class="pw-footer__social-link" href="#" aria-label="Telegram">
+                                <img src="assets/telegram.svg" width="24" height="24" alt="" aria-hidden="true">
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="pw-footer__divider" role="separator" aria-hidden="true"></div>
+
+            <div class="pw-footer__bottom">
+                <div class="pw-footer__copy">© 2025 Perfect Water</div>
+                <div class="pw-footer__legal">
+                    <a class="pw-footer__legal-link" href="#">Політика конфіденційності</a>
+                    <a class="pw-footer__legal-link" href="#">Cookies</a>
+                    <a class="pw-footer__legal-link" href="#">Умови користування</a>
+                </div>
+                <div class="pw-footer__credit">Design by Volodka</div>
+            </div>
+        </div>
+
+        <script>
+            (function () {
+            const mql = window.matchMedia("(min-width: 835px)");
+            const details = Array.from(document.querySelectorAll("[data-footer-details]"));
+
+            function sync() {
+                const open = mql.matches;
+                details.forEach(d => (d.open = open));
+            }
+
+            sync();
+            if (mql.addEventListener) mql.addEventListener("change", sync);
+            else mql.addListener(sync);
+            })();
+        </script>
+    </footer>
+
+</body>
+</html>

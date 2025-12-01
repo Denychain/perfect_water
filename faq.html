@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Питання та відповіді — Perfect Water</title>
+
+  <meta name="description" content="Часті запитання про системи очищення води Perfect Water. Відповіді про монтаж, заміну фільтрів, гарантію та якість води.">
+
+  <link rel="icon" type="image/webp" href="/assets/img/favicon.webp" sizes="32x32">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body class="page page--faq">
+  <header class="header">
+      <div class="header__inner">
+          <a href="index.html" class="header__icon header__logo" aria-label="На головну">
+              <img src="assets/icons/logo.svg" alt="Логотип">
+          </a>
+
+          <nav class="header__menu" aria-label="Головна навігація">
+              <a href="catalog.html">Каталог</a>
+              <a href="service.html">Сервіс і монтаж</a>
+              <a href="#footer-contacts" class="js-scroll-link">Контакти</a>
+              <a href="faq.html">Питання та відповіді</a>
+          </nav>
+
+          <div class="header__search-bar" aria-hidden="true">
+              <form action="catalog.html" method="GET" class="header__search-form">
+                  <button type="submit" class="header__search-submit">
+                      <img src="assets/icons/search.svg" alt="Пошук">
+                  </button>
+                  <input type="text" name="q" class="header__search-input" placeholder="Що шукаєте?.." autocomplete="off">
+                  <button type="button" class="header__search-close" aria-label="Закрити пошук">✕</button>
+              </form>
+          </div>
+
+          <div class="header__actions">
+              <button class="header__icon header__search" type="button" aria-label="Відкрити пошук">
+                  <img src="assets/icons/search.svg" alt="Пошук">
+              </button>
+
+              <button class="header__burger" type="button" aria-label="Відкрити меню">
+                  <span class="header__burger-line"></span>
+                  <span class="header__burger-line"></span>
+                  <span class="header__burger-line"></span>
+              </button>
+          </div>
+      </div>
+  </header>
+
+<main>
+
+  <section class="support-hero section section--main-bg">
+    <div class="container support-hero__inner">
+      
+      <div class="support-hero__content">
+        <p class="pw-eyebrow">Центр підтримки Perfect Water</p>
+        <h1 class="pw-h1">Як ми можемо допомогти?</h1>
+      </div>
+
+      <div class="support-search">
+        <form class="support-search__form" role="search">
+          <div class="support-search__input-wrapper">
+            <img src="assets/icons/search.svg" class="support-search__icon" alt="" aria-hidden="true">
+            <input 
+              type="text" 
+              class="drop__input support-search__input" 
+              placeholder="Опишіть проблему (наприклад: запах, тиск, заміна...)" 
+              aria-label="Пошук по базі знань"
+            >
+          </div>
+        </form>
+
+        <div class="support-search__chips">
+          <span class="pw-badge">падає тиск</span>
+          <span class="pw-badge">протікання</span>
+          <span class="pw-badge">заміна картриджа</span>
+          <span class="pw-badge">аналіз води</span>
+        </div>
+      </div>
+
+      <div class="support-hero__actions">
+        <a href="service.html" class="pw-btn pw-btn--primary pw-btn--md">
+          Записатись на сервіс
+        </a>
+        <button type="button" class="pw-btn pw-btn--secondary pw-btn--md">
+          📷 Надіслати фото (Діагностика)
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--white-bg">
+    <div class="container">
+      <h2 class="pw-h2" style="text-align: center; margin-bottom: 40px;">Популярні запити зараз</h2>
+      
+      <div class="catalog-products__grid trending-grid">
+        
+        <a href="#pressure" class="pw-card-glass trending-card">
+          <div class="trending-card__icon">📉</div>
+          <h3 class="pw-h3 trending-card__title">Падає тиск</h3>
+          <p class="pw-body-sm trending-card__desc">Слабкий напір після заміни</p>
+        </a>
+
+        <a href="#smell" class="pw-card-glass trending-card">
+          <div class="trending-card__icon">👃</div>
+          <h3 class="pw-h3 trending-card__title">Запах або присмак</h3>
+          <p class="pw-body-sm trending-card__desc">Діагностика бака та мембрани</p>
+        </a>
+
+        <a href="#leak" class="pw-card-glass trending-card">
+          <div class="trending-card__icon">💧</div>
+          <h3 class="pw-h3 trending-card__title">Протікання</h3>
+          <p class="pw-body-sm trending-card__desc">SOS-інструкція: як перекрити</p>
+        </a>
+
+        <a href="#model" class="pw-card-glass trending-card">
+          <div class="trending-card__icon">🏷️</div>
+          <h3 class="pw-h3 trending-card__title">Модель системи</h3>
+          <p class="pw-body-sm trending-card__desc">Де знайти серійний номер</p>
+        </a>
+
+        <a href="#cartridges" class="pw-card-glass trending-card">
+          <div class="trending-card__icon">🧩</div>
+          <h3 class="pw-h3 trending-card__title">Які картриджі?</h3>
+          <p class="pw-body-sm trending-card__desc">Таблиця сумісності</p>
+        </a>
+
+        <a href="#schedule" class="pw-card-glass trending-card">
+          <div class="trending-card__icon">📅</div>
+          <h3 class="pw-h3 trending-card__title">Графік заміни</h3>
+          <p class="pw-body-sm trending-card__desc">Терміни для вашої води</p>
+        </a>
+
+        <a href="#post-install" class="pw-card-glass trending-card">
+          <div class="trending-card__icon">✅</div>
+          <h3 class="pw-h3 trending-card__title">Після монтажу</h3>
+          <p class="pw-body-sm trending-card__desc">Шум та бульбашки: норма?</p>
+        </a>
+
+        <a href="#analysis" class="pw-card-glass trending-card">
+          <div class="trending-card__icon">📊</div>
+          <h3 class="pw-h3 trending-card__title">Аналіз води</h3>
+          <p class="pw-body-sm trending-card__desc">Як читати показники TDS</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="before-after__grid"> <a href="#troubleshooting" class="pw-card-glass scenario-card scenario-card--alert">
+          <div class="scenario-card__content">
+            <span class="pw-badge scenario-card__badge">⚠️ У мене проблема</span>
+            <h2 class="pw-h2 scenario-card__title">Ремонт та Сервіс</h2>
+            <p class="pw-body-lg scenario-card__text">
+              Система не працює, протікає, вода змінила смак або настав час заміни фільтрів.
+            </p>
+            <span class="pw-btn pw-btn--secondary pw-btn--sm scenario-card__btn">Перейти до рішень →</span>
+          </div>
+          <div class="scenario-card__visual">
+            <img src="assets/img/fix-icon.webp" alt="" aria-hidden="true">
+          </div>
+        </a>
+
+        <a href="catalog.html" class="pw-card-glass scenario-card scenario-card--success">
+          <div class="scenario-card__content">
+            <span class="pw-badge scenario-card__badge">🛒 Підбір та замовлення</span>
+            <h2 class="pw-h2 scenario-card__title">Каталог та Поради</h2>
+            <p class="pw-body-lg scenario-card__text">
+              Хочу вибрати нову систему, дізнатись про комплектацію або підібрати річний запас картриджів.
+            </p>
+            <span class="pw-btn pw-btn--secondary pw-btn--sm scenario-card__btn">Гіди по вибору →</span>
+          </div>
+          <div class="scenario-card__visual">
+            <img src="assets/img/shop-icon.webp" alt="" aria-hidden="true">
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white-bg">
+    <div class="container">
+      <h2 class="pw-h2" style="text-align: center; margin-bottom: 40px;">Категорії підтримки</h2>
+      
+      <div class="catalog-cats__grid support-cats-grid">
+        
+        <a href="#cat-service" class="catalog-cat support-cat">
+          <img src="assets/icons/wrench.svg" alt="" class="support-cat__icon">
+          <h3 class="catalog-cat__title">Сервіс і ремонт</h3>
+        </a>
+
+        <a href="#cat-install" class="catalog-cat support-cat">
+          <img src="assets/icons/install.svg" alt="" class="support-cat__icon">
+          <h3 class="catalog-cat__title">Монтаж</h3>
+        </a>
+
+        <a href="#cat-consumables" class="catalog-cat support-cat">
+          <img src="assets/icons/filter.svg" alt="" class="support-cat__icon">
+          <h3 class="catalog-cat__title">Витратники</h3>
+        </a>
+
+        <a href="#cat-quality" class="catalog-cat support-cat">
+          <img src="assets/icons/drop.svg" alt="" class="support-cat__icon">
+          <h3 class="catalog-cat__title">Якість води</h3>
+        </a>
+
+        <a href="#cat-docs" class="catalog-cat support-cat">
+          <img src="assets/icons/doc.svg" alt="" class="support-cat__icon">
+          <h3 class="catalog-cat__title">Інструкції</h3>
+        </a>
+
+        <a href="#cat-payment" class="catalog-cat support-cat">
+          <img src="assets/icons/wallet.svg" alt="" class="support-cat__icon">
+          <h3 class="catalog-cat__title">Оплата й гарантія</h3>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+  <div class="container">
+    <div class="diagnostics-card">
+      <h2 class="pw-h2 diagnostics-card__title">Швидка самодіагностика</h2>
+      <p class="pw-body-lg" style="margin-bottom: 24px; text-align: center;">Дайте відповідь на 3 питання, щоб отримати точне рішення</p>
+      
+      <form class="diagnostics-card__form">
+          
+          <div class="diagnostics-card__group">
+              <p class="pw-body-lg diagnostics-card__label">1. Що сталося?</p>
+              <div class="diagnostics-options">
+                  <label class="diagnostics-pill"><input type="radio" name="problem" class="sr-only"> 🤢 Запах / Смак</label>
+                  <label class="diagnostics-pill"><input type="radio" name="problem" class="sr-only"> 📉 Слабкий тиск</label>
+                  <label class="diagnostics-pill"><input type="radio" name="problem" class="sr-only"> 💧 Протікання</label>
+                  <label class="diagnostics-pill"><input type="radio" name="problem" class="sr-only"> 🔊 Шум</label>
+              </div>
+          </div>
+
+          <div class="diagnostics-card__group">
+              <p class="pw-body-lg diagnostics-card__label">2. Джерело води?</p>
+              <div class="diagnostics-options">
+                  <label class="diagnostics-pill"><input type="radio" name="source" class="sr-only"> 🏢 Міський водопровід</label>
+                  <label class="diagnostics-pill"><input type="radio" name="source" class="sr-only"> 🏡 Свердловина / Криниця</label>
+              </div>
+          </div>
+
+          <div class="diagnostics-card__group">
+              <p class="pw-body-lg diagnostics-card__label">3. Де встановлена система?</p>
+              <div class="diagnostics-options">
+                  <label class="diagnostics-pill"><input type="radio" name="loc" class="sr-only"> Під мийкою</label>
+                  <label class="diagnostics-pill"><input type="radio" name="loc" class="sr-only"> В котельні / підвалі</label>
+              </div>
+          </div>
+
+          <div class="diagnostics-card__actions">
+              <button type="button" class="pw-btn pw-btn--primary diagnostics-btn">Отримати рішення</button>
+              <button type="button" class="pw-btn pw-btn--secondary diagnostics-btn">Надіслати фото</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <section class="section section--white-bg faq-articles">
+    <div class="container">
+      
+      <div class="faq-group">
+        <h3 class="pw-h2 faq-group__title">Troubleshooting (Вирішення проблем)</h3>
+        <div class="faq__list">
+
+          <details class="faq__item">
+            <summary class="faq__summary">
+              <span class="faq__q">Падає тиск води (повільно набирається)</span>
+              <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer article-content">
+              <p class="article-lead">Зазвичай причина у забитих фільтрах попереднього очищення або низькому тиску в баку.</p>
+              
+              <div class="article-block">
+                <strong>Симптоми:</strong>
+                <ul class="product-install__list">
+                  <li>Тонка цівка води з крана</li>
+                  <li>Бак набирається довше 2 годин</li>
+                  <li>Помпа постійно працює (шумить)</li>
+                </ul>
+              </div>
+
+              <div class="article-block">
+                <strong>Рішення (Кроки):</strong>
+                <ol class="how-it-works__list">
+                  <li>Перевірте вхідний тиск води (має бути > 2.5 атм).</li>
+                  <li>Перекрийте бак (синій краник зверху). Якщо вода з крана взагалі перестала текти — забиті картриджі (1-2-3 ступені).</li>
+                  <li>Якщо картриджі нові, перевірте тиск повітря в порожньому баку (має бути 0.4–0.6 атм).</li>
+                </ol>
+                <div class="article-img-wrapper" style="margin: 16px 0;">
+                    <img src="assets/img/tank-pressure-diagram.webp" alt="Схема перевірки тиску в баку" style="max-width: 100%; border-radius: 12px;">
+                </div>
+              </div>
+
+              <div class="article-actions">
+                <a href="#" class="pw-btn pw-btn--primary pw-btn--sm">Замовити нові картриджі</a>
+                <a href="#" class="pw-btn pw-btn--secondary pw-btn--sm">Викликати майстра</a>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__summary">
+              <span class="faq__q">Протікання води (калюжа під мийкою)</span>
+              <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer article-content">
+              <p class="article-lead">Негайно перекрийте подачу води на фільтр.</p>
+              
+              <div class="article-block">
+                <strong>SOS-дії:</strong>
+                <ol class="how-it-works__list">
+                  <li>Знайдіть хромований краник вводу води (зазвичай на трубі холодної води під мийкою) і поверніть його перпендикулярно до трубки.</li>
+                  <li>Перекрийте краник на накопичувальному баку.</li>
+                  <li>Витріть воду і зробіть фото місця протікання.</li>
+                </ol>
+              </div>
+
+              <div class="article-actions">
+                <button class="pw-btn pw-btn--primary pw-btn--sm">Надіслати фото протікання</button>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__summary">
+              <span class="faq__q">З’явився неприємний запах або присмак</span>
+              <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer article-content">
+              <p class="article-lead">Це сигнал, що вугільний постфільтр вичерпав ресурс або в баку застоялась вода.</p>
+              <div class="article-block">
+                <strong>Що робити:</strong>
+                <ul class="product-install__list">
+                    <li>Якщо системою не користувались > 2 тижнів: злийте 2-3 повних баки води.</li>
+                    <li>Якщо користуєтесь регулярно: замініть 5-й ступінь (постфільтр) та мінералізатор.</li>
+                </ul>
+              </div>
+              <div class="article-actions">
+                <a href="catalog.html#cartridges" class="pw-btn pw-btn--primary pw-btn--sm">Купити постфільтр</a>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+
+      <div class="faq-group" style="margin-top: 48px;">
+        <h3 class="pw-h2 faq-group__title">Витратники (Картриджі)</h3>
+        <div class="faq__list">
+
+          <details class="faq__item">
+            <summary class="faq__summary">
+              <span class="faq__q">Як визначити модель моєї системи?</span>
+              <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer article-content">
+              <p class="article-lead">Надішліть нам фото системи під мийкою — ми ідентифікуємо її за 2 хвилини.</p>
+              <div class="article-block">
+                <strong>Де шукати наклейку:</strong>
+                <p>Зазвичай на корпусі (металева пластина) або на колбах. Основні бренди, які ми обслуговуємо: Ecosoft, BWT, Leader, Bluefilters.</p>
+              </div>
+              <div class="article-actions">
+                <button class="pw-btn pw-btn--secondary pw-btn--sm">📷 Надіслати фото</button>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__summary">
+              <span class="faq__q">Як часто міняти картриджі?</span>
+              <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer article-content">
+              <p class="article-lead">Стандартний графік для міської води:</p>
+              <div class="product-service__table pw-card-glass" style="margin-top: 16px;">
+                <div class="product-service__row">
+                    <span class="product-service__label">Нижні картриджі (1-2-3)</span>
+                    <span class="product-service__value">3–6 міс</span>
+                </div>
+                <div class="product-service__row">
+                    <span class="product-service__label">Постфільтр / Мінералізатор</span>
+                    <span class="product-service__value">12 міс</span>
+                </div>
+                <div class="product-service__row">
+                    <span class="product-service__label">Мембрана</span>
+                    <span class="product-service__value">18–24 міс</span>
+                </div>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+
+      <div class="faq-group" style="margin-top: 48px;">
+        <h3 class="pw-h2 faq-group__title">Монтаж та Сервіс</h3>
+        <div class="faq__list">
+            
+             <details class="faq__item">
+                <summary class="faq__summary">
+                  <span class="faq__q">Які 2 фото потрібні для запису на монтаж?</span>
+                  <span class="faq__toggle" aria-hidden="true"></span>
+                </summary>
+                <div class="faq__answer article-content">
+                  <p class="article-lead">Щоб майстер взяв усі необхідні деталі, зробіть:</p>
+                  <div class="product-install__photos" style="margin-top: 16px;">
+                    <div class="product-install__photo-card">
+                        <div class="product-install__photo-placeholder"><span>Фото 1: Під мийкою</span></div>
+                        <p class="product-install__photo-caption">Щоб ми бачили труби подачі води та сифон.</p>
+                    </div>
+                    <div class="product-install__photo-card">
+                        <div class="product-install__photo-placeholder"><span>Фото 2: Зверху</span></div>
+                        <p class="product-install__photo-caption">Загальний план мийки, щоб обрати місце для крана.</p>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="help section" style="background: transparent;"> <div class="help__head" style="margin: 0 auto; text-align: center; align-items: center;">
+        <div class="help__title" style="align-items: center;">
+            <div class="help__eyebrow">КОНТАКТИ</div>
+            <h2 class="help__h2">Не знайшли відповідь?</h2>
+        </div>
+        <p class="help__desc" style="text-align: center;">Наші інженери на зв'язку. Напишіть нам або замовте дзвінок — вирішимо питання за 5 хвилин.</p>
+    </div>
+
+    <div class="help__cards">
+        <article class="drop drop--phone">
+            <img class="drop__icon" src="assets/img/phone.svg" alt="">
+            <h3 class="drop__ttl">+38 (096) 690-12-14</h3>
+            <a class="drop__btn" href="tel:+380966901214">Подзвонити</a>
+            <div class="drop__note">Пн-Пт 9:00-17:00</div>
+        </article>
+
+        <article class="drop drop--chat">
+            <img class="drop__icon" src="assets/img/chat.svg" alt="">
+            <h3 class="drop__ttl">Чат з інженером</h3>
+            <div class="drop__row">
+                <a class="drop__chip drop__chip--viber" href="#">
+                    <img class="drop__chipIcon" src="assets/img/viber.svg" alt="">
+                    <span class="drop__chipText">Viber</span>
+                </a>
+                <a class="drop__chip drop__chip--telegram" href="#">
+                    <img class="drop__chipIcon" src="assets/img/telegram.svg" alt="">
+                    <span class="drop__chipText">Telegram</span>
+                </a>
+            </div>
+            <div class="drop__note">Середній час відповіді: 3 хв</div>
+        </article>
+
+        <article class="drop drop--form">
+            <h3 class="drop__ttl">Заявка на виїзд</h3>
+            <div class="drop__form">
+                <input class="drop__input" type="tel" placeholder="Ваш телефон">
+                <button class="drop__cta" type="button">Викликати майстра →</button>
+            </div>
+            <div class="drop__note">Передзвонимо для узгодження часу</div>
+        </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pw-footer" aria-label="Footer Perfect Water">
+    <div class="pw-footer__container">
+      <div class="pw-footer__top">
+        <div class="pw-footer__brand">
+          <a class="pw-footer__brand-link" href="/" aria-label="Perfect Water — на головну">
+            <img
+              class="pw-footer__brand-mark"
+              src="assets/logo.svg"
+              width="45"
+              height="43"
+              alt=""
+              aria-hidden="true"
+            >
+            <span class="pw-footer__brand-name">Perfect<br>Water</span>
+          </a>
+
+          <p class="pw-footer__brand-tagline">
+            Технології чистої води для дому та бізнесу
+          </p>
+        </div>
+
+        <nav class="pw-footer__cols" aria-label="Навігація футера">
+          <details class="pw-footer__col pw-footer__details" data-footer-details>
+            <summary class="pw-footer__title">Рішення</summary>
+            <ul class="pw-footer__list">
+              <li><a class="pw-footer__link" href="#">Питна вода</a></li>
+              <li><a class="pw-footer__link" href="#">Побутова вода</a></li>
+              <li><a class="pw-footer__link" href="#">Картриджі</a></li>
+              <li><a class="pw-footer__link" href="#">Комплектуючі</a></li>
+            </ul>
+          </details>
+
+          <details class="pw-footer__col pw-footer__details" data-footer-details>
+            <summary class="pw-footer__title">Послуги</summary>
+            <ul class="pw-footer__list">
+              <li><a class="pw-footer__link" href="#">Сервіс і заміна</a></li>
+              <li><a class="pw-footer__link" href="#">Монтаж</a></li>
+              <li><a class="pw-footer__link" href="#">Підбір системи</a></li>
+            </ul>
+          </details>
+
+          <details class="pw-footer__col pw-footer__details" data-footer-details>
+            <summary class="pw-footer__title">Компанія</summary>
+            <ul class="pw-footer__list">
+              <li><a class="pw-footer__link" href="#">Про нас</a></li>
+              <li><a class="pw-footer__link" href="#">Питання та відповіді</a></li>
+              <li><a class="pw-footer__link" href="#">Контакти</a></li>
+            </ul>
+          </details>
+
+          <div class="pw-footer__col pw-footer__contacts" id="footer-contacts">
+            <div class="pw-footer__title pw-footer__title--static">Контакти</div>
+
+            <div class="pw-footer__contacts-body">
+              <div class="pw-footer__phones">
+                <a class="pw-footer__phone" href="tel:+380966901214">+38 (096) 690-12-14</a>
+                <a class="pw-footer__phone" href="tel:+380958526226">+38 (095) 852-62-26</a>
+              </div>
+
+              <address class="pw-footer__addr" style="font-style: normal;">
+                <span class="pw-footer__addr-city">м. Івано-Франківськ,</span><br>
+                <span class="pw-footer__addr-street">вул. Івана Миколайчука 10</span>
+              </address>
+
+              <div class="pw-footer__hours">Пн-Пт 9:00-17:00</div>
+            </div>
+
+            <div class="pw-footer__reply">Відповідаємо протягом 5 хв</div>
+
+            <nav class="pw-footer__social" aria-label="Соцмережі">
+              <a class="pw-footer__social-link" href="#" aria-label="Viber">
+                <img src="assets/viber.svg" width="24" height="24" alt="" aria-hidden="true">
+              </a>
+              <a class="pw-footer__social-link" href="#" aria-label="Instagram">
+                <img src="assets/instagram.svg" width="24" height="24" alt="" aria-hidden="true">
+              </a>
+              <a class="pw-footer__social-link" href="#" aria-label="Telegram">
+                <img src="assets/telegram.svg" width="24" height="24" alt="" aria-hidden="true">
+              </a>
+            </nav>
+          </div>
+        </nav>
+      </div>
+
+      <div class="pw-footer__divider" role="separator" aria-hidden="true"></div>
+
+      <div class="pw-footer__bottom">
+        <div class="pw-footer__copy">© 2025 Perfect Water</div>
+
+        <div class="pw-footer__legal">
+          <a class="pw-footer__legal-link" href="#">Політика конфіденційності</a>
+          <a class="pw-footer__legal-link" href="#">Cookies</a>
+          <a class="pw-footer__legal-link" href="#">Умови користування</a>
+        </div>
+
+        <div class="pw-footer__credit">Design by Volodka</div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const mql = window.matchMedia("(min-width: 835px)");
+        const details = Array.from(document.querySelectorAll("[data-footer-details]"));
+
+        function sync() {
+          const open = mql.matches;
+          details.forEach(d => (d.open = open));
+        }
+
+        sync();
+        if (mql.addEventListener) mql.addEventListener("change", sync);
+        else mql.addListener(sync);
+      })();
+    </script>
+  </footer>
+
+</body>
+</html>

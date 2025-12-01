@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Продукт — Perfect Water</title>
+  <meta name="description" content="Perfect Water — сторінка продукту: опис, характеристики, комплектація, монтаж, сервіс і гарантія.">
+
+  <link rel="icon" type="image/webp" href="/assets/img/favicon.webp" sizes="32x32">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body class="page-product">
+  <header class="header">
+      <div class="header__inner">
+          <a href="index.html" class="header__icon header__logo" aria-label="На головну">
+              <img src="assets/icons/logo.svg" alt="Логотип">
+          </a>
+
+          <nav class="header__menu" aria-label="Головна навігація">
+              <a href="catalog.html">Каталог</a>
+              <a href="service.html">Сервіс і монтаж</a>
+              <a href="#footer-contacts" class="js-scroll-link">Контакти</a>
+              <a href="faq.html">Питання та відповіді</a>
+          </nav>
+
+          <div class="header__search-bar" aria-hidden="true">
+              <form action="catalog.html" method="GET" class="header__search-form">
+                  <button type="submit" class="header__search-submit">
+                      <img src="assets/icons/search.svg" alt="Пошук">
+                  </button>
+                  <input type="text" name="q" class="header__search-input" placeholder="Що шукаєте?.." autocomplete="off">
+                  <button type="button" class="header__search-close" aria-label="Закрити пошук">✕</button>
+              </form>
+          </div>
+
+          <div class="header__actions">
+              <button class="header__icon header__search" type="button" aria-label="Відкрити пошук">
+                  <img src="assets/icons/search.svg" alt="Пошук">
+              </button>
+
+              <button class="header__burger" type="button" aria-label="Відкрити меню">
+                  <span class="header__burger-line"></span>
+                  <span class="header__burger-line"></span>
+                  <span class="header__burger-line"></span>
+              </button>
+          </div>
+      </div>
+  </header>
+
+
+  <main>
+    <section class="section section--md section--main-bg product-hero" aria-labelledby="productHeroTitle">
+    <div class="container product-hero__grid">
+
+        <div class="product-hero__content">
+        <p class="pw-eyebrow">Продукт</p>
+
+        <h1 id="productHeroTitle" class="pw-h1 product-hero__title">
+            Ecosoft RObust 1000
+        </h1>
+
+        <p class="pw-body-lg product-hero__subtitle">
+            Для чистої питної води на кухні та стабільної роботи кавомашини.
+        </p>
+
+        <ul class="product-hero__badges" aria-label="Ключові параметри">
+            <li class="pw-badge"><span class="pw-badge__k">Тип</span> Осмос</li>
+            <li class="pw-badge"><span class="pw-badge__k">Продуктивність</span> 1.5 л/хв</li>
+            <li class="pw-badge"><span class="pw-badge__k">Очищення</span> 5–6 ступенів</li>
+            <li class="pw-badge"><span class="pw-badge__k">Монтаж</span> Під мийкою</li>
+        </ul>
+
+        <div class="product-hero__priceBox" role="group" aria-label="Ціна">
+            <div class="product-hero__priceRow">
+            <span class="product-hero__priceLabel">Орієнтир:</span>
+            <strong class="product-hero__priceValue">від 12 900 грн</strong>
+            </div>
+            <p class="product-hero__priceNote pw-body-sm">
+            Остаточна ціна залежить від комплектації та стану води.
+            </p>
+        </div>
+
+        <div class="product-hero__actions" role="group" aria-label="Основні дії">
+            <a class="pw-btn pw-btn--primary pw-btn--md product-hero__cta" href="#request">
+            Додати до запиту
+            </a>
+
+            <a class="pw-btn pw-btn--secondary pw-btn--md product-hero__cta" href="#service">
+            Потрібен монтаж / виїзд майстра
+            </a>
+
+            <a class="pw-btn pw-btn--tertiary pw-btn--md product-hero__cta product-hero__cta-buy" href="#buy">
+            Купити як є
+            </a>
+        </div>
+        </div>
+
+        <figure class="product-hero__media" aria-label="Зображення товару">
+        <img
+            class="product-hero__img"
+            src="assets/img/product-placeholder.webp"
+            alt="Ecosoft RObust 1000"
+            loading="eager"
+        >
+        <figcaption class="product-hero__mediaNote pw-body-sm">
+            Фото може відрізнятися залежно від комплектації.
+        </figcaption>
+        </figure>
+
+    </div>
+    </section>
+
+    <div class="product-nav section">
+    <div class="container">
+        <nav class="product-nav__scroll" aria-label="Product navigation">
+        <a href="#complectation" class="product-nav__item is-active">Комплектація</a>
+        <a href="#installation" class="product-nav__item">Монтаж</a>
+        <a href="#specs" class="product-nav__item">Характеристики</a>
+        <a href="#service" class="product-nav__item">Сервіс</a>
+        </nav>
+    </div>
+    </div>
+
+    <section id="complectation" class="section section--white-bg product-packages">
+    <div class="container">
+        <header class="product-packages__head">
+        <p class="pw-eyebrow">Комплектація</p>
+        <h2 class="pw-h2">Пакети для цієї моделі</h2>
+        <p class="product-packages__lead">
+            Обери готовий пакет під свій дім — ми зібрали типові сценарії, які найчастіше встановлюємо клієнтам.
+        </p>
+        </header>
+
+        <div class="product-packages__grid">
+        <article class="product-packages__card pw-card-glass pw-card-glass--md">
+            <h3 class="product-packages__name">База</h3>
+            <p class="product-packages__tagline">Для компактної кухні та базового щоденного використання.</p>
+
+            <ul class="product-packages__list">
+            <li>Система зворотного осмосу • 1&nbsp;шт.</li>
+            <li>Картридж механічної очистки • 1&nbsp;шт.</li>
+            <li>Вугільний картридж попередньої очистки • 1&nbsp;шт.</li>
+            <li>Кран для питної води (одинарний) • 1&nbsp;шт.</li>
+            </ul>
+
+            <p class="product-packages__benefit">
+            Чиста вода для пиття, приготування їжі та кави щодня без переплат.
+            </p>
+
+            <button type="button"
+            class="pw-btn pw-btn--secondary pw-btn--sm product-packages__btn">
+            Додати пакет до запиту
+            </button>
+        </article>
+
+        <article class="product-packages__card pw-card-glass pw-card-glass--md">
+            <h3 class="product-packages__name">Комфорт</h3>
+            <p class="product-packages__tagline">Для сім’ї, яка активно готує та п’є багато води.</p>
+
+            <ul class="product-packages__list">
+            <li>Система зворотного осмосу з підвищеною продуктивністю • 1&nbsp;шт.</li>
+            <li>Картридж механічної очистки • 1&nbsp;шт.</li>
+            <li>2-ступенева вугільна очистка • 2&nbsp;шт.</li>
+            <li>Мінералізатор • 1&nbsp;шт.</li>
+            <li>Кран для питної води (дворежимний) • 1&nbsp;шт.</li>
+            </ul>
+
+            <p class="product-packages__benefit">
+            М’який смак води, стабільна робота при активному користуванні.
+            </p>
+
+            <button type="button"
+            class="pw-btn pw-btn--secondary pw-btn--sm product-packages__btn">
+            Додати пакет до запиту
+            </button>
+        </article>
+
+        <article class="product-packages__card pw-card-glass pw-card-glass--md">
+            <h3 class="product-packages__name">Максимум</h3>
+            <p class="product-packages__tagline">Для великого дому та вимогливих до якості води.</p>
+
+            <ul class="product-packages__list">
+            <li>Система зворотного осмосу преміум-класу • 1&nbsp;шт.</li>
+            <li>Попередня фільтрація на ввід води в дім • 1&nbsp;компл.</li>
+            <li>Тонка механічна очистка • 1&nbsp;шт.</li>
+            <li>Повна вугільна касета • 1&nbsp;шт.</li>
+            <li>Мінералізатор + структуризатор • 1&nbsp;компл.</li>
+            <li>Стильний кран для питної води • 1&nbsp;шт.</li>
+            </ul>
+
+            <p class="product-packages__benefit">
+            Максимальний комфорт і стабільна якість води навіть при високому споживанні.
+            </p>
+
+            <button type="button"
+            class="pw-btn pw-btn--secondary pw-btn--sm product-packages__btn">
+            Додати пакет до запиту
+            </button>
+        </article>
+        </div>
+
+        <section class="product-addons" aria-label="Часто додають до цієї моделі">
+        <div class="product-addons__head">
+            <p class="pw-eyebrow">Часто додають</p>
+            <p class="product-addons__lead">
+            Додаткові вузли, які знімають питання «що ще треба докупити?» без складного конфігуратора.
+            </p>
+        </div>
+
+        <div class="product-addons__track">
+            <article class="product-addons__card">
+            <h3 class="product-addons__name">Мінералізатор</h3>
+            <p class="product-addons__when">
+                Коли потрібно: хочете м’якший, «живіший» смак води з мінералами.
+            </p>
+            <button type="button"
+                class="pw-btn pw-btn--secondary pw-btn--sm product-addons__btn">
+                Додати до запиту
+            </button>
+            </article>
+
+            <article class="product-addons__card">
+            <h3 class="product-addons__name">Попередній фільтр на ввід</h3>
+            <p class="product-addons__when">
+                Коли потрібно: старі труби, багато іржі або піску у воді.
+            </p>
+            <button type="button"
+                class="pw-btn pw-btn--secondary pw-btn--sm product-addons__btn">
+                Додати до запиту
+            </button>
+            </article>
+
+            <article class="product-addons__card">
+            <h3 class="product-addons__name">Окремий кран для кухні</h3>
+            <p class="product-addons__when">
+                Коли потрібно: не хочете змішувати чисту воду з загальним змішувачем.
+            </p>
+            <button type="button"
+                class="pw-btn pw-btn--secondary pw-btn--sm product-addons__btn">
+                Додати до запиту
+            </button>
+            </article>
+
+            <article class="product-addons__card">
+            <h3 class="product-addons__name">Комплект картриджів на рік</h3>
+            <p class="product-addons__when">
+                Коли потрібно: плануєте одразу закрити сервіс на найближчі 12 місяців.
+            </p>
+            <button type="button"
+                class="pw-btn pw-btn--secondary pw-btn--sm product-addons__btn">
+                Додати до запиту
+            </button>
+            </article>
+        </div>
+        </section>
+    </div>
+    </section>
+
+    <section id="installation" class="section section--white-bg product-install">
+    <div class="container">
+        <header class="product-install__head">
+        <p class="pw-eyebrow">Монтаж</p>
+        <h2 class="pw-h2">Підготовка до монтажу без зайвих переписок</h2>
+        <p class="product-install__lead">
+            Щоб монтаж відбувся з першого виїзду, перевірте базові умови та надішліть нам два фото.
+        </p>
+        </header>
+
+        <div class="product-install__grid">
+        <section class="product-install__card" aria-label="Що потрібно для монтажу">
+            <h3 class="product-install__subheading">Що потрібно на місці монтажу</h3>
+            <ul class="product-install__list">
+            <li>
+                <strong>Місце під систему.</strong>
+                <span>Вільний простір під мийкою або в тумбі, де можна розмістити фільтр і бак.</span>
+            </li>
+            <li>
+                <strong>Доступ до підключення.</strong>
+                <span>Підхід до холодної води та змішувача без стаціонарних перешкод.</span>
+            </li>
+            <li>
+                <strong>Злив.</strong>
+                <span>Можливість підключитися до сифонa або окремого зливу.</span>
+            </li>
+            <li>
+                <strong>Електрика (де актуально).</strong>
+                <span>Розетка біля місця монтажу для помпи чи станції підвищення тиску.</span>
+            </li>
+            </ul>
+        </section>
+
+        <section class="product-install__right" aria-label="Фото для підтвердження монтажу">
+            <div class="product-install__photos">
+            <figure class="product-install__photo-card">
+                <div class="product-install__photo-placeholder" aria-hidden="true">
+                <span>Фото 1</span>
+                </div>
+                <figcaption class="product-install__photo-caption">
+                <strong>Під мийкою / у тумбі.</strong> Вид зверху, щоб було видно труби, сифон і вільний простір.
+                </figcaption>
+            </figure>
+
+            <figure class="product-install__photo-card">
+                <div class="product-install__photo-placeholder" aria-hidden="true">
+                <span>Фото 2</span>
+                </div>
+                <figcaption class="product-install__photo-caption">
+                <strong>Загальний вигляд кухні.</strong> Щоб оцінити місце для крана питної води та підведення.
+                </figcaption>
+            </figure>
+            </div>
+
+            <div class="product-install__actions">
+            <button type="button"
+                    class="pw-btn pw-btn--primary pw-btn--md product-install__btn">
+                Надіслати 2 фото (підтвердити монтаж)
+            </button>
+            <button type="button"
+                    class="pw-btn pw-btn--secondary pw-btn--md product-install__btn">
+                Записатися на монтаж
+            </button>
+            </div>
+        </section>
+        </div>
+    </div>
+    </section>
+
+    <section id="specs" class="section section--white-bg product-specs">
+    <div class="container product-specs__inner">
+        <header class="product-specs__head">
+        <p class="product-specs__eyebrow">Характеристики</p>
+        <h2 class="product-specs__h2">Інженерні параметри без зайвого полотна</h2>
+        <p class="product-specs__sub">
+            Ключові цифри, щоб зрозуміти, чи підходить система саме під ваш будинок.
+        </p>
+        </header>
+
+        <div class="product-specs__grid">
+        <section class="product-specs__keys" aria-label="Ключові характеристики">
+            <article class="product-specs__tile pw-card-glass">
+            <h3 class="product-specs__tile-label">Продуктивність</h3>
+            <p class="product-specs__tile-value">до 280 л/добу</p>
+            </article>
+
+            <article class="product-specs__tile pw-card-glass">
+            <h3 class="product-specs__tile-label">Ресурс картриджів</h3>
+            <p class="product-specs__tile-value">6–12 міс. або до 6000 л</p>
+            </article>
+
+            <article class="product-specs__tile pw-card-glass">
+            <h3 class="product-specs__tile-label">Робочий тиск</h3>
+            <p class="product-specs__tile-value">1–6 бар</p>
+            </article>
+
+            <article class="product-specs__tile pw-card-glass">
+            <h3 class="product-specs__tile-label">Габарити системи</h3>
+            <p class="product-specs__tile-value">Ш×В×Г: 380 × 430 × 150 мм</p>
+            </article>
+
+            <article class="product-specs__tile pw-card-glass">
+            <h3 class="product-specs__tile-label">Тип картриджів</h3>
+            <p class="product-specs__tile-value">Швидкоз’ємні модулі PW</p>
+            </article>
+
+            <article class="product-specs__tile pw-card-glass">
+            <h3 class="product-specs__tile-label">Підключення</h3>
+            <p class="product-specs__tile-value">½" холодна вода + окремий кран</p>
+            </article>
+        </section>
+
+        <section class="product-specs__accordions" aria-label="Розширені характеристики">
+            <details class="faq__item product-specs__accordion" open>
+            <summary class="faq__summary">
+                <span class="faq__q">Технічне</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+                <p>
+                Робочий діапазон тиску: 1–6 бар. Робоча температура води: +5…+30&nbsp;°C.
+                Максимальна солевмістність: до 1500&nbsp;мг/л.
+                </p>
+            </div>
+            </details>
+
+            <details class="faq__item product-specs__accordion">
+            <summary class="faq__summary">
+                <span class="faq__q">Сумісність / вимоги</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+                <p>
+                Потрібна вільна тумба під мийкою від 40 см, стандартне підключення до
+                холодної води та можливість під’єднатися до сифона. Для моделей з помпою
+                потрібна розетка поблизу.
+                </p>
+            </div>
+            </details>
+
+            <details class="faq__item product-specs__accordion">
+            <summary class="faq__summary">
+                <span class="faq__q">Комплектація в коробці</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+                <p>
+                Блок очищення в зборі, стартовий комплект картриджів, кран для питної води,
+                шланги, фітинги та інструкція з монтажу й обслуговування.
+                </p>
+            </div>
+            </details>
+
+            <details class="faq__item product-specs__accordion">
+            <summary class="faq__summary">
+                <span class="faq__q">Габарити / схема</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+                <p>
+                Детальна схема з розмірами та відступами йде в комплекті. За потреби
+                монтажник може надіслати схему у Viber / Telegram перед виїздом.
+                </p>
+            </div>
+            </details>
+
+            <details class="faq__item product-specs__accordion">
+            <summary class="faq__summary">
+                <span class="faq__q">Гарантія та документи</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+                <p>
+                Офіційна гарантія 12 місяців, сервіс Perfect Water. 
+                Паспорт та сертифікати можна отримати у монтажника або
+                <a href="#" class="product-specs__doc-link">скачати паспорт</a> і
+                <a href="#" class="product-specs__doc-link">сертифікат</a>.
+                </p>
+            </div>
+            </details>
+        </section>
+        </div>
+    </div>
+    </section>
+
+    <section id="service" class="section section--white-bg product-service">
+    <div class="container product-service__inner">
+
+        <header class="product-service__head">
+        <p class="product-service__eyebrow">Сервіс та витратники</p>
+        <h2 class="product-service__h2">Правильне обслуговування — довга робота системи</h2>
+        </header>
+
+        <div class="product-service__table pw-card-glass">
+        <div class="product-service__row">
+            <span class="product-service__label">Механічний картридж</span>
+            <span class="product-service__value">кожні 3–6 місяців</span>
+        </div>
+
+        <div class="product-service__row">
+            <span class="product-service__label">Вугільний картридж</span>
+            <span class="product-service__value">кожні 6 місяців</span>
+        </div>
+
+        <div class="product-service__row">
+            <span class="product-service__label">Мембрана</span>
+            <span class="product-service__value">1 раз на 1–2 роки</span>
+        </div>
+
+        <div class="product-service__row">
+            <span class="product-service__label">Післяфільтр / мінералізатор</span>
+            <span class="product-service__value">кожні 12 місяців</span>
+        </div>
+        </div>
+
+        <div class="product-service__actions">
+        <button class="pw-btn pw-btn--primary pw-btn--md product-service__btn">
+            Замовити комплект витратників
+        </button>
+        <button class="pw-btn pw-btn--secondary pw-btn--md product-service__btn">
+            Сервісний план / нагадування
+        </button>
+        </div>
+
+    </div>
+    </section>
+
+    <section id="proofs" class="section section--white-bg product-proofs">
+    <div class="container product-proofs__inner">
+
+        <header class="product-proofs__head">
+        <p class="pw-eyebrow product-proofs__eyebrow">Мінімальні докази</p>
+        <h2 class="pw-h2 product-proofs__title">
+            Що змінюється після встановлення системи
+        </h2>
+        <p class="product-proofs__sub">
+            2 реальні сценарії: яка була вода, що поставили і який результат отримали.
+        </p>
+        </header>
+
+        <div class="product-proofs__list">
+        <article class="pw-card-glass product-proof-card">
+            <p class="product-proof-card__tag">Для кави</p>
+            <h3 class="product-proof-card__title">Кавʼярня в центрі міста</h3>
+
+            <dl class="product-proof-card__dl">
+            <div class="product-proof-card__row">
+                <dt>Було</dt>
+                <dd>Нестабільний смак кави, накип у бойлері, часті поломки техніки.</dd>
+            </div>
+            <div class="product-proof-card__row">
+                <dt>Що поставили</dt>
+                <dd>Осмос з помпою + попереднє помʼякшення.</dd>
+            </div>
+            <div class="product-proof-card__row">
+                <dt>Стало</dt>
+                <dd>Стабільний смак, менше сервісу обладнання, прогнозована собівартість чашки.</dd>
+            </div>
+            </dl>
+        </article>
+
+        <article class="pw-card-glass product-proof-card">
+            <p class="product-proof-card__tag">Для будинку</p>
+            <h3 class="product-proof-card__title">Приватний будинок з колодязем</h3>
+
+            <dl class="product-proof-card__dl">
+            <div class="product-proof-card__row">
+                <dt>Було</dt>
+                <dd>Залізо у воді, жовті плями на сантехніці, неприємний запах.</dd>
+            </div>
+            <div class="product-proof-card__row">
+                <dt>Що поставили</dt>
+                <dd>Фільтр знезалізнення + система питної води під мийку.</dd>
+            </div>
+            <div class="product-proof-card__row">
+                <dt>Стало</dt>
+                <dd>Чиста прозора вода в крані, без запаху, сантехніка без рудих потіків.</dd>
+            </div>
+            </dl>
+        </article>
+        </div>
+
+    </div>
+    </section>
+
+
+  </main>
+
+  <footer class="pw-footer" aria-label="Footer Perfect Water">
+    <div class="pw-footer__container">
+      <div class="pw-footer__top">
+        <div class="pw-footer__brand">
+          <a class="pw-footer__brand-link" href="/" aria-label="Perfect Water — на головну">
+            <img
+              class="pw-footer__brand-mark"
+              src="assets/logo.svg"
+              width="45"
+              height="43"
+              alt=""
+              aria-hidden="true"
+            >
+            <span class="pw-footer__brand-name">Perfect<br>Water</span>
+          </a>
+
+          <p class="pw-footer__brand-tagline">
+            Технології чистої води для дому та бізнесу
+          </p>
+        </div>
+
+        <nav class="pw-footer__cols" aria-label="Навігація футера">
+          <details class="pw-footer__col pw-footer__details" data-footer-details>
+            <summary class="pw-footer__title">Рішення</summary>
+            <ul class="pw-footer__list">
+              <li><a class="pw-footer__link" href="#">Питна вода</a></li>
+              <li><a class="pw-footer__link" href="#">Побутова вода</a></li>
+              <li><a class="pw-footer__link" href="#">Картриджі</a></li>
+              <li><a class="pw-footer__link" href="#">Комплектуючі</a></li>
+            </ul>
+          </details>
+
+          <details class="pw-footer__col pw-footer__details" data-footer-details>
+            <summary class="pw-footer__title">Послуги</summary>
+            <ul class="pw-footer__list">
+              <li><a class="pw-footer__link" href="#">Сервіс і заміна</a></li>
+              <li><a class="pw-footer__link" href="#">Монтаж</a></li>
+              <li><a class="pw-footer__link" href="#">Підбір системи</a></li>
+            </ul>
+          </details>
+
+          <details class="pw-footer__col pw-footer__details" data-footer-details>
+            <summary class="pw-footer__title">Компанія</summary>
+            <ul class="pw-footer__list">
+              <li><a class="pw-footer__link" href="#">Про нас</a></li>
+              <li><a class="pw-footer__link" href="#">Питання та відповіді</a></li>
+              <li><a class="pw-footer__link" href="#">Контакти</a></li>
+            </ul>
+          </details>
+
+          <div class="pw-footer__col pw-footer__contacts" id="footer-contacts" role="region" aria-label="Контакти">
+            <div class="pw-footer__title pw-footer__title--static">Контакти</div>
+
+            <div class="pw-footer__contacts-body">
+              <div class="pw-footer__phones">
+                <a class="pw-footer__phone" href="tel:+380966901214">+38 (096) 690-12-14</a>
+                <a class="pw-footer__phone" href="tel:+380958526226">+38 (095) 852-62-26</a>
+              </div>
+
+              <div class="pw-footer__addr">
+                <span class="pw-footer__addr-city">м. Івано-Франківськ,</span><br>
+                <span class="pw-footer__addr-street">вул. Івана Миколайчука 10</span>
+              </div>
+
+              <div class="pw-footer__hours">Пн-Пт 9:00-17:00</div>
+            </div>
+
+            <div class="pw-footer__reply">Відповідаємо протягом 5 хв</div>
+
+            <nav class="pw-footer__social" aria-label="Соцмережі">
+              <a class="pw-footer__social-link" href="#" aria-label="Viber">
+                <img src="assets/viber.svg" width="24" height="24" alt="" aria-hidden="true">
+              </a>
+              <a class="pw-footer__social-link" href="#" aria-label="Instagram">
+                <img src="assets/instagram.svg" width="24" height="24" alt="" aria-hidden="true">
+              </a>
+              <a class="pw-footer__social-link" href="#" aria-label="Telegram">
+                <img src="assets/telegram.svg" width="24" height="24" alt="" aria-hidden="true">
+              </a>
+            </nav>
+          </div>
+        </nav>
+      </div>
+
+      <div class="pw-footer__divider" role="separator" aria-hidden="true"></div>
+
+      <div class="pw-footer__bottom">
+        <div class="pw-footer__copy">© 2025 Perfect Water</div>
+
+        <div class="pw-footer__legal">
+          <a class="pw-footer__legal-link" href="#">Політика конфіденційності</a>
+          <a class="pw-footer__legal-link" href="#">Cookies</a>
+          <a class="pw-footer__legal-link" href="#">Умови користування</a>
+        </div>
+
+        <div class="pw-footer__credit">Design by Volodka</div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const mql = window.matchMedia("(min-width: 835px)");
+        const details = Array.from(document.querySelectorAll("[data-footer-details]"));
+
+        function sync() {
+          const open = mql.matches;
+          details.forEach(d => (d.open = open));
+        }
+
+        sync();
+        if (mql.addEventListener) mql.addEventListener("change", sync);
+        else mql.addListener(sync);
+      })();
+    </script>
+  </footer>
+
+</body>
+</html>

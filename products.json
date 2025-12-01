@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "PW Standard PRO",
+    "category": "drinking",
+    "description": "Фільтр зворотного осмосу з мінералізацією. Ідеальний баланс смаку та користі.",
+    "price": 6000,
+    "image": "assets/img/solutions/solution-1.webp",
+    "link": "product.html"
+  },
+  {
+    "id": 2,
+    "title": "PW Whole House Elite",
+    "category": "house",
+    "description": "Система пом'якшення води кабінетного типу для квартири або котеджу.",
+    "price": 18500,
+    "image": "assets/img/solutions/solution-2.webp",
+    "link": "product.html"
+  },
+  {
+    "id": 3,
+    "title": "Ecosoft P'URE AquaCalcium",
+    "category": "drinking",
+    "description": "Інноваційна технологія, що відтворює природну структуру води.",
+    "price": 8200,
+    "image": "assets/img/solutions/solution-1.webp",
+    "link": "product.html"
+  },
+  {
+    "id": 4,
+    "title": "Комплект картриджів 1-2-3",
+    "category": "cartridges",
+    "description": "Річний запас змінних картриджів попереднього очищення.",
+    "price": 1200,
+    "image": "assets/img/solutions/solution-3.webp",
+    "link": "product.html"
+  },
+  {
+    "id": 5,
+    "title": "PW Iron Remover",
+    "category": "house",
+    "description": "Система знезалізнення води. Прибирає запах металу та рудий наліт.",
+    "price": 14500,
+    "image": "assets/img/solutions/solution-2.webp",
+    "link": "product.html"
+  },
+  {
+    "id": 6,
+    "title": "Мембрана Filmtec 50G",
+    "category": "components",
+    "description": "Оригінальна мембрана виробництва США. Серце вашого осмосу.",
+    "price": 1800,
+    "image": "assets/img/solutions/solution-5.webp",
+    "link": "product.html"
+  }
+]
